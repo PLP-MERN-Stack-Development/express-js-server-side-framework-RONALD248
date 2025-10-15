@@ -1,0 +1,7 @@
+const ApiError = require('./ApiError');
+class ValidationError extends ApiError {
+  constructor(message = 'Validation Error') {
+    super(message, 422);
+  }
+}
+module.exports = ValidationError;
